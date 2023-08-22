@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="EndRecipeSite.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="User.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style6 {
+            height: 289px;
+            width: 1100px;
+        }
+
+        .auto-style7 {
+            height: 287px;
+            float: left;
+            width: 403px;
+            margin-right: 0px;
+        }
+
+        .auto-style11 {
+            height: auto;
+            margin-left: 417px;
+        }
+
+        .auto-style12 {
+            font-size: large;
+        }
+
+        .auto-style17 {
+            margin-bottom: 0px;
+        }
+
+        .auto-style18 {
+            width: 100%;
+        }
+
+        .auto-style20 {
+            width: 100%;
+            height: 212px;
+        }
+
+        .auto-style19 {
+            font-size: x-large;
+            text-align: center;
+            color: #0000FF;
+            background-color: #33CCFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 174px; width: 1100px; margin-left: 300px; background-color: #CCFFFF;">
+            <asp:Image ID="Image1" runat="server" CssClass="auto-style17" Height="185px" ImageUrl="~/mainpictures/ee.png" Width="1098px" />
+        </div>
+        <br />
+        <br />
+        <div style="margin-left: 300px;" class="auto-style6">
+            <div style="background-color: #CCFFFF" class="auto-style7">
+                <strong>
+                    <table class="auto-style18">
+                    </table>
+                    <table class="auto-style20">
+                        <tr>
+                            <td class="auto-style19" style="border-style: none none groove none; border-bottom-width: medium">MENÜLER</td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: #FFFFFF"><a href="Admincategory.aspx">KATEGORİLER</a></td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: #FFFFFF"><a href="AdminMeal.aspx">YEMEKLER </a></td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: #FFFFFF"><a href="AdminComments.aspx">YORUMLAR </a></td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: #FFFFFF"><a href ="AdminMessages.aspx"> MESAJLAR </a></td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: #FFFFFF"><a href="AdminMealOfTheDay.aspx">GÜNÜN YEMEĞİ</a> </td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: #FFFFFF"><a href="AdminRecipes.aspx"> TARİFÖNER </a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="AdminAboutUs.aspx"> HAKKIMIZDA </a></td>
+                        </tr>
+                    </table>
+                    <span class="auto-style12">
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></strong>
+            </div>
+
+            <div style="background-color: #CCFFFF;" class="auto-style11">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        &nbsp;
+                    </p>
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
